@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Certificates | Sweta Koshta</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1 class="page-title">Certificates</h1>
+
+<div class="grid">
+
+<div class="box">
+<h3>Android Developer Virtual Internship - Google For Developers</h3>
+<img src="images/certificates/Android Developer Virtual Internship By Google For Developers.jpg"
+onclick="openPopup(this.src)">
+</div>
+
+<div class="box">
+<h3>Data Analytics Job Simulation- Deloitte</h3>
+<img src="images/certificates/Data Analytics Job Simulation - Deloitte.jpg"
+onclick="openPopup(this.src)">
+</div>
+
+<div class="box">
+<h3>Digital Application Fundamentals (STEM) - Future Skills Prime (NASSCOM)</h3>
+<img src="images/certificates/Digital Applications Fundamentals (STEM) - Future Skills Prime.jpg"
+onclick="openPopup(this.src)">
+</div>
+
+<div class="box">
+<h3>EduSkills Tech Camp On Google AI-ML - Google For Developers</h3>
+<img src="images/certificates/Eduskills Tech Camp on Google AI-ML By Google For Developers.jpg"
+onclick="openPopup(this.src)">
+</div>
+
+<div class="box">
+<h3>Networking Basics - Cisco Networking Academy</h3>
+<img src="images/certificates/Networking Basics By Cisco Networking Academy.jpg"
+onclick="openPopup(this.src)">
+</div>
+
+<div class="box">
+<h3>Python Essentials 1 - Cisco Networking Academy</h3>
+<img src="images/certificates/Python Essential 1 By Cisco Networking Academy.jpg"
+onclick="openPopup(this.src)">
+</div>
+
+<div class="box">
+<h3>Python Essentials 2 - Cisco Networking Academy</h3>
+<img src="images/certificates/Python Essential 2 By Cisco Networking Academy.jpg"
+onclick="openPopup(this.src)">
+</div>
+
+</div>
+
+<p class="coming">More certifications on the way 🎓</p>
+
+
+<!-- POPUP VIEW -->
+
+<div id="popup" class="popup">
+
+<span class="close" onclick="closePopup()">×</span>
+
+<img id="popup-img">
+
+</div>
+
+
+<script>
+
+function openPopup(src){
+document.getElementById("popup").style.display="flex";
+document.getElementById("popup-img").src=src;
+}
+
+function closePopup(){
+document.getElementById("popup").style.display="none";
+}
+
+</script>
+
+</body>
+</html>
