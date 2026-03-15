@@ -2,9 +2,12 @@
 <html>
 <head>
 <title>Sweta Koshta | Portfolio</title>
+
 <link rel="stylesheet" href="style.css">
+
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 
 <body>
@@ -22,8 +25,14 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 <div class="social">
 
 <a href="https://www.linkedin.com/in/sweta-koshta-702a1a356/"><i class="fab fa-linkedin"></i></a>
+
 <a href="https://github.com/Bug-buster7"><i class="fab fa-github"></i></a>
-<a href="Sweta - Resume(ATS).pdf"><i class="fa fa-file"></i></a>
+
+<!-- Resume icon -->
+
+<a href="#" onclick="openResume(); return false;">
+<i class="fa fa-file"></i>
+</a>
 
 </div>
 
@@ -34,12 +43,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 <h2>About Me</h2>
 
 <p>
-
 I am a B.Tech student passionate about Frontend Development,
 Artificial Intelligence and Machine Learning. I enjoy building
 intelligent systems, analyzing real world data and creating
 meaningful technology solutions.
-
 </p>
 
 </section>
@@ -77,6 +84,44 @@ meaningful technology solutions.
 </div>
 
 </section>
+
+
+<!-- Resume Popup -->
+
+<div id="resumePopup" class="popup">
+
+<span class="close" onclick="closeResume()">×</span>
+
+<div class="resume-container">
+
+<!-- Resume viewer -->
+
+<embed id="resumeViewer" type="application/pdf" width="100%" height="500px">
+
+<br>
+
+<a href="sweta_resume.pdf" download class="download-btn">
+Download Resume
+</a>
+
+</div>
+
+</div>
+
+
+<script>
+
+function openResume(){
+document.getElementById("resumePopup").style.display="flex";
+document.getElementById("resumeViewer").src="sweta_resume.pdf";
+}
+
+function closeResume(){
+document.getElementById("resumePopup").style.display="none";
+document.getElementById("resumeViewer").src="";
+}
+
+</script>
 
 </body>
 </html>
